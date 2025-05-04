@@ -1,4 +1,4 @@
-<p align='center' >Practice</p>
+<h1 align='center' >Practice</h1>
 
 <p align='center' >Practicing everything which is essential!</p>
 
