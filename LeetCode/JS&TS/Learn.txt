@@ -1,0 +1,19 @@
+---------------- JS ----------------
+
+------ FUNCTIONS ------
+
+--- TYPES ---
+
+- function() {}
+- const = () => {}
+
+--- DEFAULT METHODS / KEYWORDS / PROPERTY ---
+
+- args
+    - ARGUEMENTS PASSED TO THE FUNCTION
+
+---------------- TS ----------------
+
+--- TYPES ---
+
+- string

@@ -1,0 +1,19 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.8">
+  <diagram name="Arrays &amp; Strings" id="0gA2JOWocrQwcXl9MmPV">
+    <mxGraphModel dx="936" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vPRFGDvhVNBobZ5SM6Oa-3" value="" style="group;rounded=0;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="120" y="670" width="430" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="vPRFGDvhVNBobZ5SM6Oa-2" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.diag_snip_rect;dx=6;whiteSpace=wrap;rounded=0;" vertex="1" parent="vPRFGDvhVNBobZ5SM6Oa-3">
+          <mxGeometry width="430" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="vPRFGDvhVNBobZ5SM6Oa-1" value="Find Closest Num to 0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;rounded=0;" vertex="1" parent="vPRFGDvhVNBobZ5SM6Oa-3">
+          <mxGeometry x="125.00465158371043" y="28" width="180" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
