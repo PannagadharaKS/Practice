@@ -35,10 +35,8 @@
                     - [null|3|next] <-> [prev|6|null]
                 * Circular
                     - -> [3|next] -> [6|next] ->
-                      |________________________|   
                 * Circular Double
                     - <-> [prev|3|next] <-> [prev|6|next] <->
-                      |_____________________________________|
         * Dynamic
             * Array
                 - [3]
