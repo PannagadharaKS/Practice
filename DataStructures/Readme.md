@@ -1,4 +1,4 @@
-<p align="center" >DATA STRUCTURES</p>
+<h1 align="center" >DATA STRUCTURES</h1>
 
 ## Types
 
