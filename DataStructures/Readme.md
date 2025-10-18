@@ -59,10 +59,17 @@
     * Non Linear
         * Tree
             * Binary Tree
+                - L --- ROOT --- R
             * Binary Search Tree
+                - L --- < ROOT --- < R
             * AVL Tree
+                - SMALL ( L --- < ROOT --- < R )
             * B-Tree
+                - [K1 | K2]L --- [K1 | K2 ...]ROOT --- [K1 | K2 ...]R
+            * B+Tree
+            * Segment Tree
             * Red-Black Tree
+                - L[RED] --- < ROOT[BLACK] --- < R[RED]
             * N-ary Tree
             * Trie
         * Graph
@@ -70,7 +77,47 @@
             * Undirected
             * Weighted
             * Unweighted
+            * Acyclic / DAG
+            * Cyclic
+            * Bipartite
+            * Complete
         * Heap
+            * Min
+            * Max
 
-## Algorithmss
+## Algorithmic Complexity
 
+* Types
+    * Time [+/-]
+        * Amount of Computational Time taken.
+    * Space [-/+]
+        * Amount of Memory needed.
+* Process of Calculating
+    * Big O Notation
+        * Performance in Upper Limit
+        * O(f(n))
+    * Big θ Notation
+        * Performance in Between Upper & Lower Limit
+        * θ(g(n))
+    * Big Ω Notation
+        * Performance in Lower Limit
+        * Ω(h(n))
+* Common Runtime Complexities
+    * Constant
+        * O(1)
+    * Logarithmic
+        * O(logn)
+    * Linear
+        * O(n)
+    * Polynomial
+        * O(n^k)
+    * Exponential
+        * O(2^n)
+    * Factorial
+        * O(n!)
+
+
+## Algorithms
+
+* Sort
+* Search
