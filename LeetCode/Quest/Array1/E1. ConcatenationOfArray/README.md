@@ -1,0 +1,9 @@
+<p align='center' >CONCATENATION OF ARRAY</p>
+
+## APPROACH 1
+
+1. MERGE 2 ARRAY USING REST OPERATOR [...]
+
+## APPROACH 2
+
+1. USING [].concat([])
