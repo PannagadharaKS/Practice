@@ -13,7 +13,7 @@
 4. [0, 2, 2, 2, 2, 2, 3, 4, 4, 4, 4, ...] <!-- CUMULATIVE FREQUENCIES = VALUES LESSER THAN CURRENT -->
     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,... <!-- ARRAY INDEX -->
 
-5. [2, 0,  4,  0,   4,  3] <!-- MATCHED 1ST STEP TO FROM 4TH STEP -->
+5. [2, 0,  4,  0,   4,  3] <!-- MATCHED 1ST STEP TO 4TH STEP -->
     5, 0, 10,  0,   10, 6 <!-- INPUT -->
 
 ## APPROACH
