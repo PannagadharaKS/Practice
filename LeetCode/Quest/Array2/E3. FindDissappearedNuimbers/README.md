@@ -4,7 +4,7 @@
 
 1. [4, 3, 2, 7, 8, 2, 3, 1] <!-- INPUT -->
 
-2. (3)(2)(1)(6)(7)(1)(2)(0) <!-- ITEM - 1 IN A TEMP VARIABLE -->
+2. (3)(2)(1)(6)(7)(1)(2)(0) <!-- ITEM-1 IN A TEMP VARIABLE -->
 
 3. [4, 3, 2, -7, 8, 2, 3, 1] <!-- NEGATE INPUT ARRAY ITEM FOR EACH INDEX IN 2ND STEP / INPUT[3] = -7 -->
    [4, 3, -2, -7, 8, 2, 3, 1] <!-- INPUT[2] = -2 -->
