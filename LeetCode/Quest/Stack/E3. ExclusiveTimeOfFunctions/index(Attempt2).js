@@ -42,3 +42,5 @@ let exclusiveTime = function (n, logs) {
     return frequencyArray;
 
 };
+
+console.log(1, ["0:start:0","0:start:1","0:start:2","0:end:3","0:end:4","0:end:5"]);
