@@ -9,6 +9,7 @@ let shuffle = function(nums, n) {
     let ans = [];
     let i = 0;
 
+    // --------- APPROACH 1 ---------
     while(true) {
         if(!num1[i]) break;
         
@@ -16,6 +17,19 @@ let shuffle = function(nums, n) {
         i++;
     }
 
-    return ans;
+    // --------- APPROACH 2 ---------
+    for(let [i, num] of num1.entries()) {
+        ans.push(num)
 
+        if(num2[i] || num2[i] == 0) ans.push(num2[i]);
+    }
+
+    // --------- APPROACH 3 ---------
+    for(let i = 0; i < n; i++) {
+        ans.push(nums[i], nums[i+n]);
+    }
+
+    return ans;
 };
+
+console.log(shuffle([1, 2, 3, 4], 2))
