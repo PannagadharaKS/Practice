@@ -15,7 +15,7 @@
    [ITEM] == 0 <!-- IF NUMBER IS EQUAL TO 0 IN 3RD STEP ARRAY -->
     - MISSING
 
-5. [DUPLICATE, MISSING] = [2, 0] <!-- OUTPUT -->
+5. [DUPLICATE, MISSING] = [2, 3] <!-- OUTPUT -->
 
 ## APPROACH 1
 

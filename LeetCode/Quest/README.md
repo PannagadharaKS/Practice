@@ -10,18 +10,19 @@
         = [...ARRAY1, ...ARRAY2]
 
     E2. SHUFFLE THE ARRAY
-        * SLICE + APPEND
-        = OUTPUT.PUSH(ARRAY1[I], ARRAY2[I])
+        * PUSH INDEX, INDEX+N OF ITEMS
+        = ANS.PUSH(NUMS[I], NUMS[I+N])
     
     E3. MAX CONSECUTIVE ONES
         * INCREMENT FOR 1 + RESET FOR 0
-        = IF 1 COUNT++ ELSE IF COUNT > MAX_COUNT THEN MAX_COUNT = COUNT, COUNT = 0
+        = IF NUM = 1, THEN COUNT++, MAX_COUNT = MAX(MAX_COUNT, COUNT) ELSE COUNT = 0
 ```
 
 ### ARRAY 2
 
 ```
-    
+    E1. SET MISMATCH
+        * 
 ```
 
 ### STACK
