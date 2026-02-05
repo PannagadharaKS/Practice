@@ -7,7 +7,7 @@
 2. [0, 0, 0, 0, ..., 0] <!-- CREATE -->
     0, 1, 2, 3, ..., 100 <!-- ARRAY INDEX -->
 
-3. [0, 1, 2, 0, 1, ...] <!-- FREQUENCIE -->
+3. [0, 1, 2, 0, 1, ...] <!-- FREQUENCIES -->
     0, 1, 2, 3, 4, ... <!-- INPUT FREQUENCY -->
 
 4. [ITEM] >= 2 <!-- IF NUMBER IS GREATER THAN 2 IN 3RD STEP ARRAY -->
