@@ -52,5 +52,15 @@
 ```
 
 ### MONOTONIC STACK
+
+```
+    E1. FIND DISCOUNT
+        * 
+
+    E2. DAILY TEMPERATURES
+
+    E3. LARGEST RECTANGLE IN HISTOGRAM
+```
+
 ### QUIZ
 
