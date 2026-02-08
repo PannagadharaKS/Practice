@@ -1,3 +1,30 @@
 <p align='center' >IMPLEMENT QUEUE USING STACK</p>
 
 ## VISUALIZATION
+
+1. INPUTS:
+    OPERATIONS = ["MyQueue", "Push", "Pop"]
+    VALUES = [NULL, 1, NULL]
+
+2. INIT IN_STACK = []
+   INIT OUT_STACK = []
+
+3. PUSH(1):
+    IN_STACK.PUSH(1)
+
+4. POP():
+    OUT_STACK IS EMPTY ? YES
+        POP FROM IN_STACK
+        PUSH TO OUT_STACK
+    
+    POP FROM OUT_STACK ---> 1
+
+5. PEEK():
+    OUT_STACK IS EMPTY ? YES
+        POP FROM IN_STACK
+        PUSH TO OUT_STACK
+    
+    OUT_STACK[TOP]
+
+6. EMPTY():
+    OUT_STACK & IN_STACK EMPTY ? YES : NO
