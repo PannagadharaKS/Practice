@@ -1,0 +1,15 @@
+<p align='center' >LAST STONE WEIGHT</p>
+
+## VISUALIZATION
+
+1. STONES = [2, 7, 4, 1, 8, 1] <!-- INPUT -->
+
+## ALGORITHM
+
+0. START
+
+6. RETURN AREA
+7. END
+
+## REMEMBERING POINTS
+
