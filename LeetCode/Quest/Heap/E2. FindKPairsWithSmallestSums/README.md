@@ -1,3 +1,22 @@
 <p align='center' >FIND K PAIRS OF SMALLEST SUMS</p>
 
 ## VISUALIZATION
+
+1. INPUT: 
+    NUMS1 = [1,7,11]
+    NUMS2 = [2,4,6]
+    K = 3
+
+2. INIT: 
+    VISITED_PAIRS = NEW SET()
+    RESULT = []
+    I, J = 0, 0
+    HEAP = [[0, 0]]
+
+3. INIT FUNCTIONS:
+    HEAPIFY_DOWN(HEAP, I, N)
+    HEAPIFY_UP(HEAP, N - 1)
+    EXTRACT_MIN_AND_HEAPIFY()
+    INSERT_INTO_HEAP(VALUE: [I, J])
+
+4. 
