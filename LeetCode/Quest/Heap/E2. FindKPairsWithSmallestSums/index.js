@@ -58,9 +58,9 @@ let kSmallestPairs = function (nums1, nums2, k) {
                 if (leftSum < smallestSum || heap[left][0] < smallestI ||
                     (heap[left][0] === smallestI && heap[left][1] < smallestJ)) {
                     smallest = left;
-                    smallestSum = leftSum;  // ADD THIS
-                    smallestI = heap[left][0];  // ADD THIS
-                    smallestJ = heap[left][1];  // ADD THIS
+                    smallestSum = leftSum;
+                    smallestI = heap[left][0];
+                    smallestJ = heap[left][1];
                 }
             }
 
@@ -68,9 +68,9 @@ let kSmallestPairs = function (nums1, nums2, k) {
                 if (rightSum < smallestSum || heap[right][0] < smallestI ||
                     (heap[right][0] === smallestI && heap[right][1] < smallestJ)) {
                     smallest = right;
-                    smallestSum = rightSum;  // ADD THIS
-                    smallestI = heap[right][0];  // ADD THIS
-                    smallestJ = heap[right][1];  // ADD THIS
+                    smallestSum = rightSum;
+                    smallestI = heap[right][0];
+                    smallestJ = heap[right][1];
                 }
             }
 
