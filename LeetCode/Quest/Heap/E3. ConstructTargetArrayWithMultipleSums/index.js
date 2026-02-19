@@ -37,24 +37,31 @@ let isPossible = function (target) {
     const extractMaxAndHeapify = () => {
         let max = target[0]
         if (target.length > 1) {
+            console.log("target.length > 1", target)
             target[0] = target.pop();
         } else if (target.length == 1) {
+            console.log("target.length == 1", target)
             target.pop()
         }
         heapifyDown(target, 0, target.length);
+        console.log("After heapifyDown", target)
         return max;
     }
 
     const insertIntoHeap = (nextMax) => {
         target.push(nextMax);
         heapifyUp(target, target.length - 1)
+        console.log("After heapifyUp", target)
     }
 
     for (let i = 0; i < target.length; i++) {
         sum += target[i];
     }
 
-    heapifyDown(target, 0, target.length);
+    for(let i = Math.floor(target.length / 2) - 1; i >= 0; i--) {
+        heapifyDown(target, i, target.length);
+    }
+    console.log("After First heapifyDown", target)
 
     while (target.length) {
         let max = extractMaxAndHeapify();
