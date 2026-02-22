@@ -1,3 +1,28 @@
 <p align='center' >ROTATE STRING</p>
 
 ## VISUALIZATION
+
+1. INPUT:
+    S = "abcde"
+    GOAL = "deabc"
+
+2. GOAL.LENGTH == S.LENGTH ?
+    YES
+
+3. S + S
+   "abcde" + "abcde"
+   "abcdeabcde"
+
+4. (S + S).INCLUDES(GOAL) ?
+   "abcdeabcde" HAS deabc
+
+5. RETURN TRUE
+
+## ALGORITHM
+
+0. START
+1. CHECK IF GOAL.LENGTH MATCHES S.LENGTH AND
+2. DOUBLE THE INPUT S STRING
+3. CHECK IF GOAL IS PRESENT IN THE DOUBLED INPUT S STRING
+4. RETURN THE OUTCOME
+5. END
