@@ -10,7 +10,6 @@ let reformatDate = function(date) {
             ...monthIndexes,
             [m]: index + 1 <= 9 ? "0" + (index + 1) : index + 1
         })
-    let output = ""
     let day = date.split(" ")[0];
     let month = date.split(" ")[1];
     let year = date.split(" ")[2];
