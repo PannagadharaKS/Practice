@@ -6,11 +6,11 @@ export interface NodeType {
 export interface LinkedList {
     head: NodeType | null
 
-    append(value: number): {}
-    prepend(value: number): {}
-    update(oldValue: number, newValue: number): {}
-    delete(value: number): {}
-    find(): {}
-    toArray(): {}
-    size(): {}
+    append(value: number): any
+    prepend(value: number): any
+    update(oldValue: number, newValue: number): any
+    delete(value: number): any
+    find(value: number): any
+    toArray(): any
+    size(): any
 }
