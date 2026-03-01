@@ -89,13 +89,52 @@ class LinkedList {
     delete(value: number) {
         try {
             let current = this.head;
-            if(current)
+            if(current) {
+                while(current.next) {
+                    if(current.next.val == value) {
+                        current.next = current.next.next;
+                        return true;
+                    }
+                    current = current?.next;
+                }
+            }
+
+            return false;
         } catch (e: any) {
             console.log("Fatal - delete", e);
             return null;
         }
     }
 
-    toArray() { }
-    size() { }
+    toArray() {
+        try {
+            let result = [];
+            let current = this.head;
+            while(current?.next) {
+                result.push(current.val);
+                current = current.next;
+            }
+
+            return result;
+        } catch(e: any) {
+            console.log("Fatal - toArray", e);
+            return null;
+        }
+    }
+
+    size() {
+        try {
+            let count = 0;
+            let current = this.head;
+            while(current?.next) {
+                count++
+                current = current.next;
+            }
+
+            return count;
+        } catch(e: any) {
+            console.log("Fatal - size", e);
+            return null;
+        }
+    }
 }
