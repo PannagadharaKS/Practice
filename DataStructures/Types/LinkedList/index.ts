@@ -1,15 +1,17 @@
-class ListNode {
-    val: number;
-    next: ListNode | null;
+import { NodeType, LinkedList } from "./linkedList.interfaces";
 
-    constructor(val: number, next: ListNode | null) {
+class Node implements NodeType {
+    val: number;
+    next: NodeType | null;
+
+    constructor(val: number, next: NodeType | null) {
         this.val = val == undefined ? 0 : val;
         this.next = next == undefined ? null : next;
     }
 }
 
-class LinkedList {
-    head: ListNode | null;
+class LinkedListOperations implements LinkedList {
+    head: NodeType | null;
 
     constructor() {
         this.head = null;
@@ -17,7 +19,7 @@ class LinkedList {
 
     append(value: number) {
         try {
-            const node = new ListNode(value, null);
+            const node = new Node(value, null);
             if (!this.head) {
                 this.head = node;
                 return;
@@ -39,7 +41,7 @@ class LinkedList {
 
     prepend(value: number) {
         try {
-            let current = new ListNode(value, null);
+            let current = new Node(value, null);
             if (!this.head) {
                 this.head = current;
                 return true;
