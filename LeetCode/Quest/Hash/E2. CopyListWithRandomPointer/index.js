@@ -13,7 +13,6 @@
  */
 let copyRandomList = function(head) {
     let current = head;
-    let newList = null;
     let nodeMap = new Map();
 
     while(current != null) {
