@@ -1,43 +1,12 @@
 // --------------------- MAX HEAP ---------------------
-
-export interface MaxHeapifyUp {
-
-}
-
-export interface MaxHeapifyDown {
-
-}
-
-export interface ConvertArrayToMaxHeap {
-
-}
-
-export interface InsertIntoMaxHeap {
-
-}
-
-export interface ExtractMaxFromHeap {
-
+export interface MaxHeapType {
+    buildHeap(): void;
+    insert(val: number): void;
+    extractMax(): number | null;
+    peek(): number | null;
+    size(): number;
+    toArray(): number[];
+    clear(): void;
 }
 
 // --------------------- MIN HEAP ---------------------
-
-export interface MinHeapifyUp {
-
-}
-
-export interface MinHeapifyDown {
-
-}
-
-export interface ConvertArrayToMinHeap {
-
-}
-
-export interface InsertIntoMinHeap {
-
-}
-
-export interface ExtractMinFromHeap {
-
-}

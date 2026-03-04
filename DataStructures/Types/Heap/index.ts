@@ -1,73 +1,81 @@
-export const maxHeapifyUp = (heap: number[], i: number) => { // BOTTOM -> TOP
-    try {
-        while(i > 0) {
-            let parent = Math.floor((i - 1) / 2);
-            if(heap[parent] >= heap[i]) break;
+import { MaxHeapType } from "./heap.interface";
 
-            [heap[i], heap[parent]] = [heap[parent], heap[i]];
+export class MaxHeap implements MaxHeapType {
+    private heap: number[] = [];
+
+    constructor(initialArray: number[] = []) {
+        this.heap = [...initialArray];
+        this.buildHeap();
+    }
+
+    private maxHeapifyUp(i: number): void {
+        while (i > 0) {
+            const parent = Math.floor((i - 1) / 2);
+            if (this.heap[parent] >= this.heap[i]) break;
+
+            [this.heap[i], this.heap[parent]] = [this.heap[parent], this.heap[i]];
             i = parent;
         }
-
-        return heap;
-    } catch(e: any) {
-        console.log("Fatal - HeapifyUp:", e);
-        throw e;
     }
-}
 
-export const maxHeapifyDown = (heap: number[], i: number, n: number) => { // TOP -> BOTTOM
-    try {
-        while(true) {
+    private maxHeapifyDown(i: number, n: number): void {
+        while (true) {
             let largest = i;
-            let left = 2 * i + 1;
-            let right = 2 * i + 2;
+            const left = 2 * i + 1;
+            const right = 2 * i + 2;
 
-            if(left < n && heap[left] > heap[largest]) largest = left;
-            if(right < n && heap[right] > heap[largest]) largest = right;
+            if (left < n && this.heap[left] > this.heap[largest]) {
+                largest = left;
+            }
+            if (right < n && this.heap[right] > this.heap[largest]) {
+                largest = right;
+            }
 
-            if(largest == i) break;
-            [heap[i], heap[largest]] = [heap[largest], heap[i]]
+            if (largest === i) break;
+
+            [this.heap[i], this.heap[largest]] = [this.heap[largest], this.heap[i]];
             i = largest;
         }
-
-        return heap;
-    } catch(e: any) {
-        console.log("Fatal - HeapifyDown:", e);
-        throw e;
     }
-}
 
-export const convertArrayToMaxHeap = (arr: number[]) => { // HEAPIFY_DOWN ON PARENT / NON-LEAVES
-    try {
-        let n = arr.length;
-        for(let i = Math.floor(n / 2) - 1; i >= 0; i--) {
-            maxHeapifyDown(arr, i, n);
+    public buildHeap(): void {
+        const n = this.heap.length;
+        for (let i = Math.floor(n / 2) - 1; i >= 0; i--) {
+            this.maxHeapifyDown(i, n);
         }
-    } catch(e: any) {
-        console.log("Fatal - buildHeap:", e);
-        throw e;
     }
-}
 
-export const insertIntoMaxHeap = (heap: number[], val: number) => { // INSERT INTO HEAP
-    try {
-        heap.push(val);
-        maxHeapifyUp(heap, heap.length - 1);
-    } catch(e: any) {
-        console.log("Fatal - insert:", e);
-        throw e;
+    public insert(val: number): void {
+        this.heap.push(val);
+        this.maxHeapifyUp(this.heap.length - 1);
     }
-}
 
-export const extractMaxFromHeap = (heap: number[]): any => { // EXTRACT MAX FROM HEAP
-    try {
-        if(heap.length == 0) return null;
-        const max = heap[0];
-        heap[0] = heap.pop()!;
-        maxHeapifyDown(heap, 0, heap.length);
+    public extractMax(): number | null {
+        if (this.heap.length === 0) return null;
+
+        const max = this.heap[0];
+        this.heap[0] = this.heap.pop()!;
+
+        if (this.heap.length > 0) {
+            this.maxHeapifyDown(0, this.heap.length);
+        }
+
         return max;
-    } catch(e: any) {
-        console.log("Fatal - insert:", e);
-        throw e;
+    }
+
+    public peek(): number | null {
+        return this.heap.length > 0 ? this.heap[0] : null;
+    }
+
+    public size(): number {
+        return this.heap.length;
+    }
+
+    public toArray(): number[] {
+        return [...this.heap];
+    }
+
+    public clear(): void {
+        this.heap = [];
     }
 }
