@@ -20,3 +20,5 @@ let minStartValue = function(nums) {
         if(i == nums.length - 1 && nums[i] + prefixSum > 1) return startValue;
     }
 };
+
+console.log(minStartValue([-3,2,-3,4,2]))
