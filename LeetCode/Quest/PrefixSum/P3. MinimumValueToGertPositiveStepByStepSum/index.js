@@ -5,7 +5,6 @@
 let minStartValue = function(nums) {
     let minValue = 0;
     let prefixSum = new Array(nums.length + 1).fill(0);
-    let i = 0;
 
     for(let j = 0; j < nums.length; j++) {
         prefixSum[j+1] += prefixSum[j] + nums[j]
