@@ -3,7 +3,6 @@
  * @return {number}
  */
 let minStartValue = function(nums) {
-    let startValue = 1;
     let minValue = 0;
     let prefixSum = new Array(nums.length + 1).fill(0);
     let i = 0;
