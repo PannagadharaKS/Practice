@@ -7,7 +7,7 @@ let minStartValue = function(nums) {
     let prefixSum = new Array(nums.length + 1).fill(0);
 
     for(let j = 0; j < nums.length; j++) {
-        prefixSum[j+1] += prefixSum[j] + nums[j]
+        prefixSum[j+1] = prefixSum[j] + nums[j]
         if(minValue > prefixSum[j+1]) minValue = prefixSum[j+1]
     }
 
