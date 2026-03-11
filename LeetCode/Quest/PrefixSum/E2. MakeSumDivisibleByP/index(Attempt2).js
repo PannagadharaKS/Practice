@@ -4,7 +4,6 @@
  * @return {number}
  */
 let minSubarray = function (nums, p) {
-    let prefixSum = 0;
     let sumMap = new Map();
     let sum = 0;
 
@@ -32,7 +31,6 @@ let minSubarray = function (nums, p) {
         }
 
         sumMap.set(prefixRemainder, j)
-
 
         j++
     }
