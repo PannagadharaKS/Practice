@@ -13,7 +13,6 @@ let nextLargerNodes = function(head) {
     let current = head;
     let greater = head;
     let output = [];
-    let linkedListToArray = [];
 
     while(current != null) {
         if(greater == null) {
