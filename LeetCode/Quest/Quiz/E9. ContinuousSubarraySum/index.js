@@ -16,19 +16,26 @@ let checkSubarraySum = function(nums, k) {
 
     if(total % k == 0) return true;
 
+    console.log("nums", nums)
+
     let prev = 0;
     let prevCount = 1;
     for(let i = 1; i < nums.length; i++) {
         prev += nums[i-1];
         if((prev + nums[i]) % k == 0) return true
 
+        console.log(prev, prevCount, i, nums[i])
+
         if(i == nums.length - 1) {
-            i = 2;
             prev = 0;
             prevCount++
-            if(prevCount == nums.length) break;
+            i = prevCount - 1
+            if(i == nums.length - 1) break;
         }
     }
 
     return false
 };
+
+console.log(checkSubarraySum([1,2,3], 5))
+// console.log(checkSubarraySum([23,2,6,4,7], 13))
